@@ -1,0 +1,23 @@
+{
+  "name": "TravisDellard",
+  "version": "1.0.0",
+  "description": "![Android App Photo](https://user-images.githubusercontent.com/25181025/41806025-641a4cd2-767a-11e8-9180-375fbe033b35.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tdellard1/SavvyCodersPortfolio-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tdellard1/SavvyCodersPortfolio-/issues"
+  },
+  "homepage": "https://github.com/tdellard1/SavvyCodersPortfolio-#readme",
+  "devDependencies": {
+    "eslint": "^5.3.0"
+  }
+}
