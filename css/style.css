@@ -1,0 +1,144 @@
+h1 {
+    margin: 18px auto;
+    text-align: center;
+}
+h3 {
+    color: #191919;
+    text-align: center;
+}
+p { 
+    font-size: 1.2rem;
+    margin: 18px auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8ff;
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+    "navigation"
+    "header"
+    "content"
+    "footer";
+    grid-template-rows: min-content min-content auto min-content;
+}
+#contact {
+    text-align: center;
+    }
+#content {
+    margin: 0;
+    grid-area: content;
+}
+
+#content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 75%;
+}
+
+#header {
+    grid-area: header;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+#navigation {
+    border-bottom: 2px solid #191919; 
+    width: 100%;
+    position: sticky;
+    top: 0; 
+    margin: 0;
+    background-color: wheat;
+    grid-area: navigation;
+}
+
+#navigation > ul {
+    display:flex;   
+    margin: 0;
+}
+
+
+#navigation a + ul:hover,
+#navigation a:hover + ul {
+  display: flex;
+  flex-direction: column;
+  word-wrap: none;
+}
+
+#navigation > ul > li {
+/*  font-weight: 600;  */
+    color: #a01fdb;
+    display: inline;
+    text-align: center;
+    margin: 20px 20px;
+    position: relative;
+    flex-grow: 1;
+}
+
+#navigation > ul > li > ul > li {
+    border-bottom: 2px solid black;
+}
+
+#navigation a + ul {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    display: none;
+    list-style: none;
+    padding: 0;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    width: 100%;
+}
+
+#navigation a:hover + ul {
+  display: flex;
+  flex-direction: column;
+  word-wrap: none;
+}
+
+#player {
+    align-content: center;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    font-family: 'Arimo', sans-serif;
+    background-color: darkgray;
+}
+
+.icons {
+    display: flex;
+}
+
+@media screen and (min-width: 320px) {
+    /*
+    body {
+        grid-template-areas: 
+        "navigation header"
+        "navigation content"
+        "navigation footer";
+        grid-template-rows: 
+        min-content auto min-content;
+        grid-template-columns:
+        20vw auto;
+    }
+
+    #navigation > ul {
+        flex-direction: column;
+    }
+    */
+}

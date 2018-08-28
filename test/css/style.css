@@ -1,0 +1,106 @@
+* {
+    /* padding: 0;
+    margin: 0; */
+}
+body {
+    padding: 0;
+    margin: 0;
+    /* background: gray; */
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    grid-template-areas:
+    "navigation"
+    "content"
+    "footer";
+}
+
+.backgroundimage {
+    background-image: url("https://images.unsplash.com/photo-1526374870839-e155464bb9b2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a34afeffc0b1dc2552ba82d61ea37204&auto=format&fit=crop&w=1500&q=80");   
+}
+
+#content {
+    color: azure;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-column-gap: 16px;
+    background-color: rgba(225, 105, 180, 0.3);
+    margin: 2rem;
+    padding: 2rem;
+}
+
+#footer {
+    background-color: aqua;
+    /* height: 1000px; */
+}
+
+#navigation {
+    font-family: Helvetica, sans-serif;
+    /* border-bottom: 1px solid black; */
+    font-weight: 600;
+    font-size: 12px;
+    position: sticky;
+    top: 0;
+}
+
+#navigation > ul, #navigation a + ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+#navigation a, #navigation li {
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#navigation > ul {
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+}
+
+#navigation li:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+
+#navigation a + ul {
+    display: none;
+}
+
+#navigation a + ul:hover, #navigation li:hover > ul {
+    /* display: block; */
+    display: grid;
+    grid-template-rows: repeat(9,1fr);
+    background-color: rgba(19,19,19,0.8);
+    position: absolute;
+    top:40px;
+    left: 0;
+}
+
+#navigation > ul > li > ul > li {
+    padding: 4px 0;
+}
+
+#navigation /* > ul > */ li {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+}
+
+#facebooklogo {
+    padding: 8px;
+}
+
+#searchtext {
+    height: 18px;
+}
