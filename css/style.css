@@ -15,7 +15,8 @@ p {
 a {
     text-decoration: none;
 }
-body {
+
+#root {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f8ff;
     margin: 0;
